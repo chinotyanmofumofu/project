@@ -211,3 +211,7 @@ Caused by: java.io.IOException: ä˘ë∂ÇÃê⁄ë±ÇÕÉäÉÇÅ[Ég ÉzÉXÉgÇ…ã≠êßìIÇ…êÿífÇ≥ÇÍÇ‹Ç
 2017-06-02 22:13:19,680 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@102e57ea{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
 2017-06-02 22:13:19,757 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@45c550b9{/help,null,UNAVAILABLE}
 2017-06-03 22:12:32,468 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-03 23:03:27,673 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-03 23:06:07,916 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-03 23:08:32,162 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-06-03 23:14:54,750 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
