@@ -2006,3 +2006,18 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.core.resources 2 10035 2017-06-03 22:27:14.005
 !MESSAGE ワークスペースは、このセッションで変更が保存されずに終了します。
+
+!ENTRY org.eclipse.ui.ide 4 4 2017-06-03 22:38:34.479
+!MESSAGE ワークスペースの保管の問題
+
+!ENTRY org.eclipse.ui.ide 2 1 2017-06-03 22:38:34.551
+!MESSAGE ワークベンチの状態を保管中に問題が発生しました。
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2017-06-03 22:38:34.551
+!MESSAGE 'Hello' のプロジェクト記述ファイル (.project) がありませんでした。 このファイルには、プロジェクトに関する重要な情報が含まれています。 新しいプロジェクト記述ファイルが作成されましたが、プロジェクトに関する情報の一部が破損している可能性があります。
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2017-06-03 22:38:34.551
+!MESSAGE 'hellow java' のプロジェクト記述ファイル (.project) がありませんでした。 このファイルには、プロジェクトに関する重要な情報が含まれています。 新しいプロジェクト記述ファイルが作成されましたが、プロジェクトに関する情報の一部が破損している可能性があります。
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2017-06-03 22:38:34.551
+!MESSAGE 'java study' のプロジェクト記述ファイル (.project) がありませんでした。 このファイルには、プロジェクトに関する重要な情報が含まれています。 新しいプロジェクト記述ファイルが作成されましたが、プロジェクトに関する情報の一部が破損している可能性があります。
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-06-03 22:38:35.502
+!MESSAGE ワークスペースは、このセッションで変更が保存されずに終了します。
