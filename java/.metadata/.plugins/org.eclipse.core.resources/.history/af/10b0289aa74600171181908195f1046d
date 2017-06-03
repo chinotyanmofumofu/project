@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package hellow_java;
+
+/**
+ * @author chino
+ *
+ */
+import java.io.*;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args)throws IOException{
+		int a,b,c,d;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		System.out.print("120*5=");
+		a = Integer.parseInt(br.readLine());
+		if (a=600){
+			System.out.println("³‰ğ");
+		}else{
+			System.out.println("a•s³‰ğ");
+		}
+		System.out.print("40/5=");
+		b = Integer.parseInt(br.readLine());
+		if(b=8){
+			System.out.println("³‰ğ");
+		}else{
+			System.out.println("•s³‰ğ");
+			
+		}
+	  
+		
+
+
+
+	}
+
+}

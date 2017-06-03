@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+package hellow_java;
+
+/**
+ * @author chino
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.print("12ÅÄ5=");
+		System.out.print(12/5);
+		System.out.println("ÅEÅEÅE"+12%5);
+
+
+
+	}
+
+}

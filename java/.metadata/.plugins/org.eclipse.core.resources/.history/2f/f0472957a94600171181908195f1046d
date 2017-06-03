@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package hellow_java;
+
+/**
+ * @author chino
+ *
+ */
+import java.io.*;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args)throws IOException{
+		int dice;
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		dice = (int)(Math.random()*6)+1;
+		System.out.println("ƒTƒCƒRƒ‚Ì–Ú‚Í"+dice);
+		if(dice==2|dice==4|dice==6){
+			System.out.println("Šï”‚Å‚·");
+		}else{
+			System.out.println("‹ô”‚Å‚·");
+		}
+		
+	}

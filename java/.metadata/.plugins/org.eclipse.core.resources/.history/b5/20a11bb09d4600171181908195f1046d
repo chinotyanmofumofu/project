@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package hellow_java;
+
+/**
+ * @author chino
+ *
+ */
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("hellow java");
+
+	}
+
+}
