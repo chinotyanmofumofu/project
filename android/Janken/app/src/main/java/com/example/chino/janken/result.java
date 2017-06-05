@@ -40,7 +40,7 @@ public class result extends AppCompatActivity {
                 break;
 
         }
-        int cpuhand = (int) (Math.random() *3);
+        int cpuhand = gethand();
         ImageView cpuhandimgview = (ImageView) findViewById(R.id.cpu_hand);
         switch(cpuhand) {
             case GU :
@@ -67,6 +67,7 @@ public class result extends AppCompatActivity {
                 result.setText(R.string.lose);
                 break;
         }
+        savedate(myhand, cpuhand, resultN);
     }
     private void savedate(int myhand, int cpuhand, int resultN ){
         SharedPreferences resultdata = PreferenceManager.getDefaultSharedPreferences(this);
@@ -88,7 +89,31 @@ public class result extends AppCompatActivity {
 
         editor.commit();
     }
-
+    private int gethand (){
+        int hand = (int)(Math.random()*3);
+        SharedPreferences resultdata = PreferenceManager.getDefaultSharedPreferences(this);
+        int gamecount = resultdata.getInt("GAMECOUNT",0);
+        int wincount = resultdata.getInt("WINCOUNT",0);
+        int lastmyhand = resultdata.getInt("LUSTMYHAND",0);
+        int lastcpuhand = resultdata.getInt("LASTCPUHAND",0);
+        int nxlastcpuhand = resultdata.getInt("NXLASTCPUHAND",0);
+        int result = resultdata.getInt("RESULT",-1);
+        if (gamecount == 1){
+            if (result == 2){
+                while (lastcpuhand == hand) {
+                    hand = (int) (Math.random() * 3);
+                }
+            }else if (result == 1){
+                hand = (lastmyhand + 2) % 3;
+            }
+        }else if (wincount > 0){
+            if (nxlastcpuhand == lastcpuhand){
+                while (hand == lastcpuhand){
+                    hand = (int)(Math.random()*3);
+                }
+            }
+        }return hand;
+    }
 
     public  void finish (View view ){
         finish();
