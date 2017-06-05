@@ -1,7 +1,9 @@
 package com.example.chino.janken;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -64,11 +66,32 @@ public class result extends AppCompatActivity {
             case 2:
                 result.setText(R.string.lose);
                 break;
+        }
+    }
+    private void savedate(int myhand, int cpuhand, int resultN ){
+        SharedPreferences resultdata = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = resultdata.edit();
+        int gamecount = resultdata.getInt("GAMECOUNT",0);
+        int wincount = resultdata.getInt("WINCOUNT",0);
+        int lastcpuhand = resultdata.getInt("LASTCPUHAND",0);
+        int lastresult = resultdata.getInt("LASTRESULT",-1);
+        editor.putInt("GAMECOUT",gamecount+1);
+        if (lastresult==2 && resultN==2) {
+            editor.putInt("WINCOUNT", wincount + 1);
+        }else {
+            editor.putInt("WINCOUNT",0);
+        }
+        editor.putInt("LASTCPUHAND",cpuhand);
+        editor.putInt("LASTMYHAND",myhand);
+        editor.putInt("NXLASTCPUHAND",lastcpuhand);
+        editor.putInt("RESULT",resultN);
+
+        editor.commit();
     }
 
 
-    }
     public  void finish (View view ){
         finish();
     }
+
 }
